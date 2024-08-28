@@ -1,19 +1,38 @@
 import java.util.Scanner;
 
-public class atividade1 {
-    public static void main(String[] args) {
-        Scanner leia = new Scanner(System.in);
+public class ativi{
+  public static void main(String[] args) {
+    System.out.println("Olá, digite um número inteiro de um a cinco:");
+   
+    Scanner leia = new Scanner(System.in);
+   
+    int numero = leia.nextInt();
 
-        int sexo;
+    
+    switch (numero){
+      case 1:
+      System.out.print("Número um foi digitado...");
+      break;
 
-        System.out.println("digite 1 para masculino ou 2 para feminino: ");
-        sexo = leia.nextInt();
-        
-        if (sexo == 1) {
-            System.out.println("masculino");
-        } else {
-            System.out.println("feminino");
-        }
+      case 2:
+      System.out.print("Número dois foi digitado...");
+      break;
 
+      case 3:
+      System.out.print("Número três foi digitado...");
+      break;
+
+      case 4:
+      System.out.print("Número quatro foi digitado...");
+      break;
+
+      case 5:
+      System.out.print("Número cinco foi digitado...");
+      break;
+
+      default:
+      System.out.print("Número inválido");
+      break;
     }
+  }
 }
